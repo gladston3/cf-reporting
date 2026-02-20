@@ -40,6 +40,9 @@ Every feature follows this process. Hooks enforce steps 1 and 3.
 - Invoke `/architect` skill before writing ANY implementation code.
 - An ADR (Architecture Decision Record) must exist at `docs/decisions/{feature-name}.md`.
 - The `/architect` skill writes the ADR path to `.claude/ACTIVE_ADR` (gitignored pointer file).
+- The ADR is automatically reviewed by the `adr-reviewer` agent (no human approval needed).
+  The agent checks completeness, feasibility, codebase consistency, and risk coverage.
+  If the agent returns REQUEST CHANGES, the architect fixes the ADR and re-submits.
 - The ADR must contain the marker `## Status: APPROVED` before implementation can begin.
 - The PreToolUse hook reads `.claude/ACTIVE_ADR`, checks the referenced ADR is approved,
   and blocks Write/Edit on gated paths until it is.

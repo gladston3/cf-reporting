@@ -3,7 +3,7 @@ name: code-reviewer
 description: >
   Independent code reviewer with read-only access. Cannot modify files.
   Reviews for security, architecture compliance, code quality, and test coverage.
-model: sonnet
+model: opus
 tools:
   - Read
   - Grep

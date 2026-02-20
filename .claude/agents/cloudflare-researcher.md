@@ -5,7 +5,7 @@ description: >
   Returns structured findings about available data fields, query patterns,
   and rate limits. Use when exploring new Cloudflare data sources or
   verifying API capabilities.
-model: haiku
+model: sonnet
 tools:
   - Read
   - Grep

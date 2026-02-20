@@ -4,7 +4,7 @@ description: >
   Architecture review and design decisions for new features. MUST be invoked
   before implementing any feature that touches src/** or prisma/schema.prisma.
   Produces an Architecture Decision Record (ADR), sets the active ADR pointer,
-  and waits for human approval. Triggers: "new feature", "add report",
+  and submits it for automated agent review. Triggers: "new feature", "add report",
   "new API integration", "change data model", "add endpoint", "refactor".
 allowed-tools: "Read,Write,Glob,Grep"
 ---
@@ -74,11 +74,31 @@ docs/decisions/{feature-name}.md
 This file is read by the PreToolUse hook to enforce that an approved ADR
 exists before implementation code can be written.
 
-### Step 5: Present and STOP
-Present the ADR to the user. Then STOP and say:
+### Step 5: Submit for automated review
+After writing the ADR, launch the `adr-reviewer` agent (subagent_type)
+using the Task tool with this prompt:
 
-"Architecture decision documented. Please review and tell me to proceed
-when ready. I will update the status to APPROVED and begin implementation."
+```
+Review the ADR at {adr_path}.
 
-DO NOT write any implementation code until the user explicitly approves.
-When approved, update `## Status: DRAFT` to `## Status: APPROVED` in the ADR.
+Read the ADR file, then follow your review process to evaluate it.
+Return your structured verdict (APPROVE or REQUEST CHANGES).
+```
+
+### Step 6: Handle the review result
+
+**If APPROVE**: Update `## Status: DRAFT` to `## Status: APPROVED` in the ADR.
+Then tell the user:
+
+"ADR reviewed and approved by the architecture review agent. Ready for
+implementation — invoke /implement to begin."
+
+**If REQUEST CHANGES**: Read the blocking issues listed by the reviewer.
+Fix them in the ADR (update the file directly). Then re-submit to the
+adr-reviewer agent (repeat Step 5). Continue until the agent approves.
+
+After fixing and getting approval, tell the user what was changed and that
+the ADR is now approved.
+
+DO NOT write any implementation code during the /architect phase.
+The architect skill only produces the ADR — implementation is a separate step.
