@@ -9,7 +9,7 @@
     "build": "next build && npm run build:worker",
     "build:worker": "tsup src/workers/index.ts --out-dir dist/workers --format cjs --target node22",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -21,30 +21,30 @@
     "worker:prod": "node dist/workers/index.js"
   },
   "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "bullmq": "^5.0.0",
+    "chart.js": "^4.4.0",
+    "chartjs-node-canvas": "^5.0.0",
+    "ioredis": "^5.0.0",
     "next": "^15.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@prisma/client": "^6.0.0",
-    "bullmq": "^5.0.0",
-    "ioredis": "^5.0.0",
-    "chart.js": "^4.4.0",
-    "chartjs-node-canvas": "^4.1.0",
     "zod": "^3.23.0"
   },
   "devDependencies": {
-    "typescript": "^5.6.0",
+    "@tailwindcss/typography": "^0.5.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
-    "prisma": "^6.0.0",
-    "vitest": "^2.0.0",
+    "autoprefixer": "^10.4.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "^15.0.0",
-    "tailwindcss": "^3.4.0",
     "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0",
-    "tsx": "^4.19.0",
+    "prisma": "^6.0.0",
+    "tailwindcss": "^3.4.0",
     "tsup": "^8.0.0",
-    "@tailwindcss/typography": "^0.5.0"
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.0.18"
   },
   "engines": {
     "node": ">=22.0.0"
