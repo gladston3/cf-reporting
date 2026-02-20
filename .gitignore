@@ -13,8 +13,8 @@ dist/
 
 # Environment (local secrets — NOT .env.example)
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 
 # Claude Code state files (per-session, not committed)
 .claude/ACTIVE_ADR
