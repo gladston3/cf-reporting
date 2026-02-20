@@ -7,7 +7,7 @@ import { validateGenerateRequest, handleGenerate } from '@/lib/reports/generate'
 describe('validateGenerateRequest', () => {
   const validBody = {
     apiToken: 'test-token-123',
-    zoneId: 'abc123def456',
+    zoneId: 'abc123def456abc123def456abc12345',
     templateId: 'traffic-overview',
     timeRange: {
       start: '2026-02-13T00:00:00Z',
@@ -69,6 +69,35 @@ describe('validateGenerateRequest', () => {
     const result = validateGenerateRequest({
       ...validBody,
       timeRange: { start: '2026-02-13T00:00:00Z', end: 'not-a-date' },
+    });
+    expect(result.success).toBe(false);
+  });
+
+  it('rejects zoneId that is not 32-char hex', () => {
+    const result = validateGenerateRequest({ ...validBody, zoneId: 'short-id' });
+    expect(result.success).toBe(false);
+  });
+
+  it('rejects zoneId with non-hex characters', () => {
+    const result = validateGenerateRequest({
+      ...validBody,
+      zoneId: 'zzzz23def456abc123def456abc12345',
+    });
+    expect(result.success).toBe(false);
+  });
+
+  it('accepts uppercase hex zoneId', () => {
+    const result = validateGenerateRequest({
+      ...validBody,
+      zoneId: 'ABC123DEF456ABC123DEF456ABC12345',
+    });
+    expect(result.success).toBe(true);
+  });
+
+  it('rejects timeRange where start is after end', () => {
+    const result = validateGenerateRequest({
+      ...validBody,
+      timeRange: { start: '2026-02-20T00:00:00Z', end: '2026-02-13T00:00:00Z' },
     });
     expect(result.success).toBe(false);
   });

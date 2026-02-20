@@ -11,15 +11,23 @@ const isoDatetime = z.string().refine(
   { message: 'Invalid ISO 8601 datetime' },
 );
 
+const zoneIdHex = z.string().regex(
+  /^[0-9a-f]{32}$/i,
+  'zoneId must be a 32-character hexadecimal string',
+);
+
 const generateRequestSchema = z.object({
   apiToken: z.string().min(1, 'apiToken is required'),
-  zoneId: z.string().min(1, 'zoneId is required'),
+  zoneId: zoneIdHex,
   zoneName: z.string().optional(),
   templateId: z.string().min(1, 'templateId is required'),
   timeRange: z.object({
     start: isoDatetime,
     end: isoDatetime,
-  }),
+  }).refine(
+    (range) => new Date(range.start) < new Date(range.end),
+    { message: 'timeRange.start must be before timeRange.end' },
+  ),
 });
 
 export type GenerateReportRequest = z.infer<typeof generateRequestSchema>;

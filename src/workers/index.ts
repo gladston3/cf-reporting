@@ -22,6 +22,7 @@ worker.on('failed', (job, err) =>
 
 async function shutdown() {
   logger.info('Shutting down worker...');
+  // worker.close() also closes the internally-created Redis connection
   await worker.close();
   process.exit(0);
 }

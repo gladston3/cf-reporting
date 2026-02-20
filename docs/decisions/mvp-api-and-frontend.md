@@ -266,9 +266,10 @@ This ADR is stateless. No database tables, no migrations. Credentials are used f
 - `src/components/report-viewer.tsx` — React client component: renders HTML in sandboxed iframe
 - `src/components/report-context.tsx` — React context provider for passing generated HTML between pages
 - `src/lib/reports/registry.ts` — Template registry (map of id → template)
+- `src/lib/reports/generate.ts` — Report generation logic: Zod validation, template lookup, and handleGenerate orchestrator (extracted from route for testability)
 - `src/lib/errors.ts` — Typed error classes (AppError base, ValidationError, CloudflareApiError re-export)
 - `src/lib/logger.ts` — Structured logger (thin wrapper; console-based for MVP, replaceable later)
-- `src/app/api/reports/generate/route.ts` — POST handler for report generation
+- `src/app/api/reports/generate/route.ts` — Thin POST handler delegating to generate.ts
 - `tests/unit/report-registry.test.ts` — Tests for template registry
 - `tests/unit/generate-api.test.ts` — Tests for API route validation logic
 
