@@ -1,0 +1,2319 @@
+{
+  "data": {
+    "viewer": {
+      "zones": [
+        {
+          "cachePerformance": [
+            {
+              "count": 1022203,
+              "dimensions": {
+                "cacheStatus": "none"
+              },
+              "sum": {
+                "edgeResponseBytes": 6046497973
+              }
+            },
+            {
+              "count": 381398,
+              "dimensions": {
+                "cacheStatus": "dynamic"
+              },
+              "sum": {
+                "edgeResponseBytes": 9133796218
+              }
+            },
+            {
+              "count": 269496,
+              "dimensions": {
+                "cacheStatus": "miss"
+              },
+              "sum": {
+                "edgeResponseBytes": 810690076
+              }
+            },
+            {
+              "count": 210370,
+              "dimensions": {
+                "cacheStatus": "hit"
+              },
+              "sum": {
+                "edgeResponseBytes": 2913329768
+              }
+            },
+            {
+              "count": 25547,
+              "dimensions": {
+                "cacheStatus": "revalidated"
+              },
+              "sum": {
+                "edgeResponseBytes": 546882359
+              }
+            },
+            {
+              "count": 7762,
+              "dimensions": {
+                "cacheStatus": "expired"
+              },
+              "sum": {
+                "edgeResponseBytes": 22888442
+              }
+            },
+            {
+              "count": 2,
+              "dimensions": {
+                "cacheStatus": "stale"
+              },
+              "sum": {
+                "edgeResponseBytes": 40395
+              }
+            }
+          ],
+          "statusCodeBreakdown": [
+            {
+              "count": 865779,
+              "dimensions": {
+                "edgeResponseStatus": 403
+              },
+              "sum": {
+                "edgeResponseBytes": 4771242889
+              }
+            },
+            {
+              "count": 636872,
+              "dimensions": {
+                "edgeResponseStatus": 200
+              },
+              "sum": {
+                "edgeResponseBytes": 13671999686
+              }
+            },
+            {
+              "count": 252642,
+              "dimensions": {
+                "edgeResponseStatus": 504
+              },
+              "sum": {
+                "edgeResponseBytes": 329014752
+              }
+            },
+            {
+              "count": 54588,
+              "dimensions": {
+                "edgeResponseStatus": 204
+              },
+              "sum": {
+                "edgeResponseBytes": 20264048
+              }
+            },
+            {
+              "count": 48690,
+              "dimensions": {
+                "edgeResponseStatus": 404
+              },
+              "sum": {
+                "edgeResponseBytes": 643612450
+              }
+            },
+            {
+              "count": 18195,
+              "dimensions": {
+                "edgeResponseStatus": 301
+              },
+              "sum": {
+                "edgeResponseBytes": 11438038
+              }
+            },
+            {
+              "count": 17246,
+              "dimensions": {
+                "edgeResponseStatus": 302
+              },
+              "sum": {
+                "edgeResponseBytes": 12303741
+              }
+            },
+            {
+              "count": 13956,
+              "dimensions": {
+                "edgeResponseStatus": 429
+              },
+              "sum": {
+                "edgeResponseBytes": 8618171
+              }
+            },
+            {
+              "count": 3969,
+              "dimensions": {
+                "edgeResponseStatus": 304
+              },
+              "sum": {
+                "edgeResponseBytes": 2382631
+              }
+            },
+            {
+              "count": 2171,
+              "dimensions": {
+                "edgeResponseStatus": 503
+              },
+              "sum": {
+                "edgeResponseBytes": 917773
+              }
+            },
+            {
+              "count": 1181,
+              "dimensions": {
+                "edgeResponseStatus": 308
+              },
+              "sum": {
+                "edgeResponseBytes": 781267
+              }
+            },
+            {
+              "count": 684,
+              "dimensions": {
+                "edgeResponseStatus": 400
+              },
+              "sum": {
+                "edgeResponseBytes": 397822
+              }
+            },
+            {
+              "count": 415,
+              "dimensions": {
+                "edgeResponseStatus": 499
+              },
+              "sum": {
+                "edgeResponseBytes": 0
+              }
+            },
+            {
+              "count": 286,
+              "dimensions": {
+                "edgeResponseStatus": 206
+              },
+              "sum": {
+                "edgeResponseBytes": 816631
+              }
+            },
+            {
+              "count": 50,
+              "dimensions": {
+                "edgeResponseStatus": 500
+              },
+              "sum": {
+                "edgeResponseBytes": 160695
+              }
+            },
+            {
+              "count": 22,
+              "dimensions": {
+                "edgeResponseStatus": 307
+              },
+              "sum": {
+                "edgeResponseBytes": 16877
+              }
+            },
+            {
+              "count": 11,
+              "dimensions": {
+                "edgeResponseStatus": 405
+              },
+              "sum": {
+                "edgeResponseBytes": 16198
+              }
+            },
+            {
+              "count": 8,
+              "dimensions": {
+                "edgeResponseStatus": 525
+              },
+              "sum": {
+                "edgeResponseBytes": 53010
+              }
+            },
+            {
+              "count": 4,
+              "dimensions": {
+                "edgeResponseStatus": 521
+              },
+              "sum": {
+                "edgeResponseBytes": 29793
+              }
+            },
+            {
+              "count": 4,
+              "dimensions": {
+                "edgeResponseStatus": 502
+              },
+              "sum": {
+                "edgeResponseBytes": 27351
+              }
+            },
+            {
+              "count": 2,
+              "dimensions": {
+                "edgeResponseStatus": 520
+              },
+              "sum": {
+                "edgeResponseBytes": 15594
+              }
+            },
+            {
+              "count": 1,
+              "dimensions": {
+                "edgeResponseStatus": 522
+              },
+              "sum": {
+                "edgeResponseBytes": 7665
+              }
+            },
+            {
+              "count": 1,
+              "dimensions": {
+                "edgeResponseStatus": 408
+              },
+              "sum": {
+                "edgeResponseBytes": 0
+              }
+            },
+            {
+              "count": 1,
+              "dimensions": {
+                "edgeResponseStatus": 524
+              },
+              "sum": {
+                "edgeResponseBytes": 8149
+              }
+            }
+          ],
+          "topCountries": [
+            {
+              "count": 435232,
+              "dimensions": {
+                "clientCountryName": "US"
+              },
+              "sum": {
+                "edgeResponseBytes": 8439767524,
+                "visits": 191847
+              }
+            },
+            {
+              "count": 388021,
+              "dimensions": {
+                "clientCountryName": "SG"
+              },
+              "sum": {
+                "edgeResponseBytes": 1684485780,
+                "visits": 941
+              }
+            },
+            {
+              "count": 299712,
+              "dimensions": {
+                "clientCountryName": "DE"
+              },
+              "sum": {
+                "edgeResponseBytes": 2693197073,
+                "visits": 10959
+              }
+            },
+            {
+              "count": 84414,
+              "dimensions": {
+                "clientCountryName": "AT"
+              },
+              "sum": {
+                "edgeResponseBytes": 723277943,
+                "visits": 1694
+              }
+            },
+            {
+              "count": 58029,
+              "dimensions": {
+                "clientCountryName": "BD"
+              },
+              "sum": {
+                "edgeResponseBytes": 347233156,
+                "visits": 2
+              }
+            },
+            {
+              "count": 56356,
+              "dimensions": {
+                "clientCountryName": "BR"
+              },
+              "sum": {
+                "edgeResponseBytes": 352904796,
+                "visits": 34
+              }
+            },
+            {
+              "count": 42869,
+              "dimensions": {
+                "clientCountryName": "MX"
+              },
+              "sum": {
+                "edgeResponseBytes": 354923351,
+                "visits": 640
+              }
+            },
+            {
+              "count": 42483,
+              "dimensions": {
+                "clientCountryName": "FR"
+              },
+              "sum": {
+                "edgeResponseBytes": 805462437,
+                "visits": 21173
+              }
+            },
+            {
+              "count": 40807,
+              "dimensions": {
+                "clientCountryName": "IQ"
+              },
+              "sum": {
+                "edgeResponseBytes": 248485945,
+                "visits": 0
+              }
+            },
+            {
+              "count": 38830,
+              "dimensions": {
+                "clientCountryName": "AR"
+              },
+              "sum": {
+                "edgeResponseBytes": 230872618,
+                "visits": 2
+              }
+            },
+            {
+              "count": 29747,
+              "dimensions": {
+                "clientCountryName": "HK"
+              },
+              "sum": {
+                "edgeResponseBytes": 449745053,
+                "visits": 1200
+              }
+            },
+            {
+              "count": 27548,
+              "dimensions": {
+                "clientCountryName": "PK"
+              },
+              "sum": {
+                "edgeResponseBytes": 166846185,
+                "visits": 1
+              }
+            },
+            {
+              "count": 17821,
+              "dimensions": {
+                "clientCountryName": "ZA"
+              },
+              "sum": {
+                "edgeResponseBytes": 107106560,
+                "visits": 4
+              }
+            },
+            {
+              "count": 16201,
+              "dimensions": {
+                "clientCountryName": "VE"
+              },
+              "sum": {
+                "edgeResponseBytes": 96758037,
+                "visits": 0
+              }
+            },
+            {
+              "count": 15588,
+              "dimensions": {
+                "clientCountryName": "DZ"
+              },
+              "sum": {
+                "edgeResponseBytes": 93183261,
+                "visits": 0
+              }
+            }
+          ],
+          "topPaths": [
+            {
+              "count": 54746,
+              "dimensions": {
+                "clientRequestPath": "/cdn-cgi/rum"
+              },
+              "sum": {
+                "edgeResponseBytes": 20295309
+              }
+            },
+            {
+              "count": 31637,
+              "dimensions": {
+                "clientRequestPath": "/cdn-cgi/speculation"
+              },
+              "sum": {
+                "edgeResponseBytes": 96533014
+              }
+            },
+            {
+              "count": 20659,
+              "dimensions": {
+                "clientRequestPath": "/search/"
+              },
+              "sum": {
+                "edgeResponseBytes": 103561671
+              }
+            },
+            {
+              "count": 17596,
+              "dimensions": {
+                "clientRequestPath": "/favicon.ico"
+              },
+              "sum": {
+                "edgeResponseBytes": 57195563
+              }
+            },
+            {
+              "count": 14978,
+              "dimensions": {
+                "clientRequestPath": "/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1"
+              },
+              "sum": {
+                "edgeResponseBytes": 877010189
+              }
+            },
+            {
+              "count": 14479,
+              "dimensions": {
+                "clientRequestPath": "/products/category-a/"
+              },
+              "sum": {
+                "edgeResponseBytes": 449567327
+              }
+            },
+            {
+              "count": 13383,
+              "dimensions": {
+                "clientRequestPath": "/media/images/favicon_1.png"
+              },
+              "sum": {
+                "edgeResponseBytes": 20594748
+              }
+            },
+            {
+              "count": 10148,
+              "dimensions": {
+                "clientRequestPath": "/cart/summary/"
+              },
+              "sum": {
+                "edgeResponseBytes": 9412693
+              }
+            },
+            {
+              "count": 9580,
+              "dimensions": {
+                "clientRequestPath": "/products/"
+              },
+              "sum": {
+                "edgeResponseBytes": 245894299
+              }
+            },
+            {
+              "count": 9467,
+              "dimensions": {
+                "clientRequestPath": "/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+              },
+              "sum": {
+                "edgeResponseBytes": 5317432
+              }
+            },
+            {
+              "count": 8596,
+              "dimensions": {
+                "clientRequestPath": "/cdn-cgi/challenge-platform/h/g/scripts/jsd/main.js"
+              },
+              "sum": {
+                "edgeResponseBytes": 82184872
+              }
+            },
+            {
+              "count": 6707,
+              "dimensions": {
+                "clientRequestPath": "/"
+              },
+              "sum": {
+                "edgeResponseBytes": 67700477
+              }
+            },
+            {
+              "count": 5698,
+              "dimensions": {
+                "clientRequestPath": "/menu/offcanvas/"
+              },
+              "sum": {
+                "edgeResponseBytes": 9921829
+              }
+            },
+            {
+              "count": 5245,
+              "dimensions": {
+                "clientRequestPath": "/products/category-b/"
+              },
+              "sum": {
+                "edgeResponseBytes": 106730999
+              }
+            },
+            {
+              "count": 5077,
+              "dimensions": {
+                "clientRequestPath": "/lib/fontawesome/css/all.min.css"
+              },
+              "sum": {
+                "edgeResponseBytes": 87894896
+              }
+            },
+            {
+              "count": 4982,
+              "dimensions": {
+                "clientRequestPath": "/js/app.globalization.js"
+              },
+              "sum": {
+                "edgeResponseBytes": 10781170
+              }
+            },
+            {
+              "count": 4979,
+              "dimensions": {
+                "clientRequestPath": "/js/analytics.utils.js"
+              },
+              "sum": {
+                "edgeResponseBytes": 10653943
+              }
+            },
+            {
+              "count": 4858,
+              "dimensions": {
+                "clientRequestPath": "/media/catalog/product-catalog-hero.jpg"
+              },
+              "sum": {
+                "edgeResponseBytes": 72840270
+              }
+            },
+            {
+              "count": 4677,
+              "dimensions": {
+                "clientRequestPath": "/products/custom-orders/"
+              },
+              "sum": {
+                "edgeResponseBytes": 101404667
+              }
+            },
+            {
+              "count": 4668,
+              "dimensions": {
+                "clientRequestPath": "/js/payment.stripe.js"
+              },
+              "sum": {
+                "edgeResponseBytes": 14520056
+              }
+            }
+          ],
+          "totals": [
+            {
+              "count": 1916778,
+              "sum": {
+                "edgeResponseBytes": 19474125231,
+                "visits": 236272
+              }
+            }
+          ],
+          "trafficOverTime": [
+            {
+              "count": 4997,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T00:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 67204747,
+                "visits": 1397
+              }
+            },
+            {
+              "count": 10750,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T01:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 96150551,
+                "visits": 1072
+              }
+            },
+            {
+              "count": 13441,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T02:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 108933608,
+                "visits": 1092
+              }
+            },
+            {
+              "count": 12849,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T03:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 185733271,
+                "visits": 1022
+              }
+            },
+            {
+              "count": 11226,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T04:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 99782970,
+                "visits": 1030
+              }
+            },
+            {
+              "count": 13012,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T05:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 111358291,
+                "visits": 1198
+              }
+            },
+            {
+              "count": 14619,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T06:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 134093320,
+                "visits": 1519
+              }
+            },
+            {
+              "count": 13390,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T07:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 145324340,
+                "visits": 1539
+              }
+            },
+            {
+              "count": 16378,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T08:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 177962114,
+                "visits": 1386
+              }
+            },
+            {
+              "count": 19986,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T09:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 203923909,
+                "visits": 1798
+              }
+            },
+            {
+              "count": 18322,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T10:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 222820967,
+                "visits": 1918
+              }
+            },
+            {
+              "count": 20260,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T11:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 165708828,
+                "visits": 1180
+              }
+            },
+            {
+              "count": 12191,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T12:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 121201414,
+                "visits": 1249
+              }
+            },
+            {
+              "count": 13664,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T13:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 146480575,
+                "visits": 1594
+              }
+            },
+            {
+              "count": 12912,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T14:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 130041857,
+                "visits": 1479
+              }
+            },
+            {
+              "count": 16641,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T15:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 156540603,
+                "visits": 1578
+              }
+            },
+            {
+              "count": 12178,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T16:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 126059673,
+                "visits": 1565
+              }
+            },
+            {
+              "count": 11179,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T17:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 113131496,
+                "visits": 1624
+              }
+            },
+            {
+              "count": 8617,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T18:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 107528629,
+                "visits": 1852
+              }
+            },
+            {
+              "count": 5957,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T19:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 88079989,
+                "visits": 1409
+              }
+            },
+            {
+              "count": 4926,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T20:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 82239274,
+                "visits": 1508
+              }
+            },
+            {
+              "count": 3881,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T21:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 71258381,
+                "visits": 1409
+              }
+            },
+            {
+              "count": 8427,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T22:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 103877319,
+                "visits": 1698
+              }
+            },
+            {
+              "count": 8810,
+              "dimensions": {
+                "datetimeHour": "2026-02-13T23:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 95768220,
+                "visits": 1455
+              }
+            },
+            {
+              "count": 6647,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T00:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 83084469,
+                "visits": 1448
+              }
+            },
+            {
+              "count": 5190,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T01:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 66077214,
+                "visits": 1245
+              }
+            },
+            {
+              "count": 5243,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T02:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 64775053,
+                "visits": 1154
+              }
+            },
+            {
+              "count": 6580,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T03:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 119939475,
+                "visits": 1267
+              }
+            },
+            {
+              "count": 7155,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T04:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 86085729,
+                "visits": 1465
+              }
+            },
+            {
+              "count": 7648,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T05:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 95204929,
+                "visits": 1586
+              }
+            },
+            {
+              "count": 10129,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T06:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 101968439,
+                "visits": 1663
+              }
+            },
+            {
+              "count": 6788,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T07:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 88201114,
+                "visits": 1562
+              }
+            },
+            {
+              "count": 9946,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T08:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 117031210,
+                "visits": 1662
+              }
+            },
+            {
+              "count": 8472,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T09:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 108783829,
+                "visits": 1748
+              }
+            },
+            {
+              "count": 8019,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T10:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 95291698,
+                "visits": 1612
+              }
+            },
+            {
+              "count": 8740,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T11:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 101631909,
+                "visits": 1583
+              }
+            },
+            {
+              "count": 7422,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T12:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 99599677,
+                "visits": 1473
+              }
+            },
+            {
+              "count": 7457,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T13:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 93634193,
+                "visits": 1362
+              }
+            },
+            {
+              "count": 8862,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T14:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 97664992,
+                "visits": 1483
+              }
+            },
+            {
+              "count": 9455,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T15:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 108608280,
+                "visits": 1541
+              }
+            },
+            {
+              "count": 10904,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T16:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 146420677,
+                "visits": 1931
+              }
+            },
+            {
+              "count": 7164,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T17:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 85835036,
+                "visits": 1506
+              }
+            },
+            {
+              "count": 9778,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T18:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 97532766,
+                "visits": 1583
+              }
+            },
+            {
+              "count": 10134,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T19:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 99215136,
+                "visits": 1523
+              }
+            },
+            {
+              "count": 12337,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T20:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 119293655,
+                "visits": 1868
+              }
+            },
+            {
+              "count": 9926,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T21:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 102097752,
+                "visits": 1239
+              }
+            },
+            {
+              "count": 14157,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T22:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 127786557,
+                "visits": 1462
+              }
+            },
+            {
+              "count": 13615,
+              "dimensions": {
+                "datetimeHour": "2026-02-14T23:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 127472661,
+                "visits": 1611
+              }
+            },
+            {
+              "count": 7356,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T00:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 87688087,
+                "visits": 1477
+              }
+            },
+            {
+              "count": 13532,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T01:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 111762004,
+                "visits": 1388
+              }
+            },
+            {
+              "count": 7885,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T02:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 97574361,
+                "visits": 1198
+              }
+            },
+            {
+              "count": 11788,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T03:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 101051617,
+                "visits": 1108
+              }
+            },
+            {
+              "count": 12194,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T04:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 105786329,
+                "visits": 1143
+              }
+            },
+            {
+              "count": 8214,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T05:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 107255636,
+                "visits": 1915
+              }
+            },
+            {
+              "count": 4687,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T06:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 123099146,
+                "visits": 1293
+              }
+            },
+            {
+              "count": 10910,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T07:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 104769166,
+                "visits": 1299
+              }
+            },
+            {
+              "count": 19641,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T08:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 155147759,
+                "visits": 1210
+              }
+            },
+            {
+              "count": 17823,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T09:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 144157312,
+                "visits": 1036
+              }
+            },
+            {
+              "count": 16813,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T10:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 141002606,
+                "visits": 1695
+              }
+            },
+            {
+              "count": 7333,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T11:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 78239823,
+                "visits": 1087
+              }
+            },
+            {
+              "count": 6164,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T12:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 83088493,
+                "visits": 1234
+              }
+            },
+            {
+              "count": 8386,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T13:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 75539074,
+                "visits": 992
+              }
+            },
+            {
+              "count": 17666,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T14:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 131772567,
+                "visits": 1425
+              }
+            },
+            {
+              "count": 20154,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T15:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 164954674,
+                "visits": 1339
+              }
+            },
+            {
+              "count": 15283,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T16:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 132407797,
+                "visits": 1382
+              }
+            },
+            {
+              "count": 10025,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T17:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 102366861,
+                "visits": 1424
+              }
+            },
+            {
+              "count": 7565,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T18:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 92610333,
+                "visits": 1400
+              }
+            },
+            {
+              "count": 6054,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T19:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 81425567,
+                "visits": 1276
+              }
+            },
+            {
+              "count": 7313,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T20:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 105785316,
+                "visits": 1810
+              }
+            },
+            {
+              "count": 7115,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T21:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 86334217,
+                "visits": 1287
+              }
+            },
+            {
+              "count": 8061,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T22:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 102655544,
+                "visits": 1470
+              }
+            },
+            {
+              "count": 9505,
+              "dimensions": {
+                "datetimeHour": "2026-02-15T23:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 93599611,
+                "visits": 1345
+              }
+            },
+            {
+              "count": 7369,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T00:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 92261442,
+                "visits": 1166
+              }
+            },
+            {
+              "count": 6307,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T01:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 77207972,
+                "visits": 1202
+              }
+            },
+            {
+              "count": 8844,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T02:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 90672610,
+                "visits": 1632
+              }
+            },
+            {
+              "count": 8386,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T03:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 93536631,
+                "visits": 1535
+              }
+            },
+            {
+              "count": 8715,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T04:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 95492301,
+                "visits": 1516
+              }
+            },
+            {
+              "count": 8138,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T05:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 90947765,
+                "visits": 1307
+              }
+            },
+            {
+              "count": 10677,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T06:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 119405248,
+                "visits": 1353
+              }
+            },
+            {
+              "count": 11427,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T07:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 117492794,
+                "visits": 1253
+              }
+            },
+            {
+              "count": 12733,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T08:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 148529827,
+                "visits": 1788
+              }
+            },
+            {
+              "count": 12344,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T09:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 127268834,
+                "visits": 1088
+              }
+            },
+            {
+              "count": 14270,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T10:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 143481944,
+                "visits": 1319
+              }
+            },
+            {
+              "count": 12485,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T11:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 142011721,
+                "visits": 1657
+              }
+            },
+            {
+              "count": 11127,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T12:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 120786657,
+                "visits": 1335
+              }
+            },
+            {
+              "count": 10952,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T13:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 112167495,
+                "visits": 784
+              }
+            },
+            {
+              "count": 11852,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T14:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 123641915,
+                "visits": 1333
+              }
+            },
+            {
+              "count": 13230,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T15:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 137472519,
+                "visits": 1113
+              }
+            },
+            {
+              "count": 10910,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T16:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 109976573,
+                "visits": 1388
+              }
+            },
+            {
+              "count": 7955,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T17:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 84046822,
+                "visits": 1349
+              }
+            },
+            {
+              "count": 11459,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T18:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 95861861,
+                "visits": 1341
+              }
+            },
+            {
+              "count": 18213,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T19:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 122886205,
+                "visits": 1289
+              }
+            },
+            {
+              "count": 17510,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T20:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 137641170,
+                "visits": 1163
+              }
+            },
+            {
+              "count": 16191,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T21:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 122212993,
+                "visits": 1374
+              }
+            },
+            {
+              "count": 5858,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T22:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 77220112,
+                "visits": 1361
+              }
+            },
+            {
+              "count": 3938,
+              "dimensions": {
+                "datetimeHour": "2026-02-16T23:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 61495356,
+                "visits": 1420
+              }
+            },
+            {
+              "count": 3666,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T00:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 56536216,
+                "visits": 1120
+              }
+            },
+            {
+              "count": 11732,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T01:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 97245579,
+                "visits": 1170
+              }
+            },
+            {
+              "count": 21244,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T02:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 145835444,
+                "visits": 1540
+              }
+            },
+            {
+              "count": 21971,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T03:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 149575517,
+                "visits": 1441
+              }
+            },
+            {
+              "count": 19270,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T04:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 146166066,
+                "visits": 1883
+              }
+            },
+            {
+              "count": 20260,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T05:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 149422016,
+                "visits": 1536
+              }
+            },
+            {
+              "count": 23219,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T06:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 176604411,
+                "visits": 2037
+              }
+            },
+            {
+              "count": 24379,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T07:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 186921455,
+                "visits": 1780
+              }
+            },
+            {
+              "count": 21356,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T08:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 167602074,
+                "visits": 1449
+              }
+            },
+            {
+              "count": 22221,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T09:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 184690852,
+                "visits": 1605
+              }
+            },
+            {
+              "count": 13614,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T10:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 155057127,
+                "visits": 1670
+              }
+            },
+            {
+              "count": 14953,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T11:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 145055243,
+                "visits": 1231
+              }
+            },
+            {
+              "count": 12048,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T12:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 123549447,
+                "visits": 1434
+              }
+            },
+            {
+              "count": 15678,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T13:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 137588320,
+                "visits": 1339
+              }
+            },
+            {
+              "count": 12618,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T14:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 129051077,
+                "visits": 1642
+              }
+            },
+            {
+              "count": 15365,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T15:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 161384561,
+                "visits": 1744
+              }
+            },
+            {
+              "count": 14385,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T16:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 151284295,
+                "visits": 1628
+              }
+            },
+            {
+              "count": 8338,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T17:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 104761098,
+                "visits": 1401
+              }
+            },
+            {
+              "count": 7020,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T18:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 93806362,
+                "visits": 1464
+              }
+            },
+            {
+              "count": 5020,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T19:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 83486787,
+                "visits": 1424
+              }
+            },
+            {
+              "count": 3800,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T20:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 67603004,
+                "visits": 1071
+              }
+            },
+            {
+              "count": 3645,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T21:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 63549862,
+                "visits": 1084
+              }
+            },
+            {
+              "count": 7186,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T22:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 92012743,
+                "visits": 1542
+              }
+            },
+            {
+              "count": 8405,
+              "dimensions": {
+                "datetimeHour": "2026-02-17T23:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 96392004,
+                "visits": 1528
+              }
+            },
+            {
+              "count": 8062,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T00:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 95224119,
+                "visits": 1464
+              }
+            },
+            {
+              "count": 5791,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T01:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 84593709,
+                "visits": 1700
+              }
+            },
+            {
+              "count": 4571,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T02:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 65641450,
+                "visits": 1040
+              }
+            },
+            {
+              "count": 4929,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T03:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 72029150,
+                "visits": 1225
+              }
+            },
+            {
+              "count": 4987,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T04:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 97029158,
+                "visits": 1389
+              }
+            },
+            {
+              "count": 5872,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T05:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 89313195,
+                "visits": 1581
+              }
+            },
+            {
+              "count": 9643,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T06:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 128429800,
+                "visits": 1921
+              }
+            },
+            {
+              "count": 8697,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T07:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 111535380,
+                "visits": 1613
+              }
+            },
+            {
+              "count": 9246,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T08:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 113063718,
+                "visits": 1244
+              }
+            },
+            {
+              "count": 11470,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T09:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 137612473,
+                "visits": 1366
+              }
+            },
+            {
+              "count": 8842,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T10:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 150753599,
+                "visits": 1409
+              }
+            },
+            {
+              "count": 9292,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T11:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 109416762,
+                "visits": 1304
+              }
+            },
+            {
+              "count": 11997,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T12:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 127584215,
+                "visits": 1246
+              }
+            },
+            {
+              "count": 12283,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T13:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 132846841,
+                "visits": 1476
+              }
+            },
+            {
+              "count": 12368,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T14:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 146757326,
+                "visits": 1433
+              }
+            },
+            {
+              "count": 7939,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T15:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 108934786,
+                "visits": 1653
+              }
+            },
+            {
+              "count": 11313,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T16:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 125078702,
+                "visits": 1671
+              }
+            },
+            {
+              "count": 14865,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T17:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 126580853,
+                "visits": 1529
+              }
+            },
+            {
+              "count": 8879,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T18:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 103581892,
+                "visits": 1613
+              }
+            },
+            {
+              "count": 8842,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T19:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 97734121,
+                "visits": 1416
+              }
+            },
+            {
+              "count": 10054,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T20:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 110088245,
+                "visits": 1403
+              }
+            },
+            {
+              "count": 13465,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T21:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 125631126,
+                "visits": 1484
+              }
+            },
+            {
+              "count": 10765,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T22:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 102932018,
+                "visits": 1364
+              }
+            },
+            {
+              "count": 11659,
+              "dimensions": {
+                "datetimeHour": "2026-02-18T23:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 114526991,
+                "visits": 1802
+              }
+            },
+            {
+              "count": 6636,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T00:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 84612310,
+                "visits": 1567
+              }
+            },
+            {
+              "count": 18281,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T01:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 157910826,
+                "visits": 1705
+              }
+            },
+            {
+              "count": 43582,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T02:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 321695675,
+                "visits": 1696
+              }
+            },
+            {
+              "count": 13366,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T03:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 132840192,
+                "visits": 1935
+              }
+            },
+            {
+              "count": 4164,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T04:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 81963431,
+                "visits": 1980
+              }
+            },
+            {
+              "count": 8439,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T05:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 104446766,
+                "visits": 1794
+              }
+            },
+            {
+              "count": 15834,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T06:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 147834825,
+                "visits": 1666
+              }
+            },
+            {
+              "count": 16932,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T07:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 142020725,
+                "visits": 1259
+              }
+            },
+            {
+              "count": 17944,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T08:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 160773798,
+                "visits": 1142
+              }
+            },
+            {
+              "count": 15522,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T09:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 142086841,
+                "visits": 1087
+              }
+            },
+            {
+              "count": 8138,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T10:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 102480533,
+                "visits": 938
+              }
+            },
+            {
+              "count": 11280,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T11:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 112533239,
+                "visits": 962
+              }
+            },
+            {
+              "count": 18291,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T12:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 139122838,
+                "visits": 996
+              }
+            },
+            {
+              "count": 9106,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T13:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 87879250,
+                "visits": 948
+              }
+            },
+            {
+              "count": 13806,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T14:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 119545125,
+                "visits": 996
+              }
+            },
+            {
+              "count": 12996,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T15:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 108397997,
+                "visits": 938
+              }
+            },
+            {
+              "count": 13038,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T16:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 115560137,
+                "visits": 1074
+              }
+            },
+            {
+              "count": 6531,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T17:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 74742258,
+                "visits": 998
+              }
+            },
+            {
+              "count": 3876,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T18:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 55500193,
+                "visits": 980
+              }
+            },
+            {
+              "count": 6601,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T19:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 78905649,
+                "visits": 1093
+              }
+            },
+            {
+              "count": 21028,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T20:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 144905140,
+                "visits": 942
+              }
+            },
+            {
+              "count": 27541,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T21:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 181486262,
+                "visits": 947
+              }
+            },
+            {
+              "count": 14500,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T22:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 98526346,
+                "visits": 846
+              }
+            },
+            {
+              "count": 9384,
+              "dimensions": {
+                "datetimeHour": "2026-02-19T23:00:00Z"
+              },
+              "sum": {
+                "edgeResponseBytes": 88020223,
+                "visits": 1227
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "errors": null
+}
