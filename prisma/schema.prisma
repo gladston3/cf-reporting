@@ -1,0 +1,133 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// === Cloudflare API Connections ===
+// Stores encrypted API tokens for Cloudflare zones and accounts
+
+model CloudflareConnection {
+  id          String         @id @default(cuid())
+  name        String         // Human-readable label (e.g., "Production Zone", "Main Account")
+  type        ConnectionType
+  zoneId      String?        // For ZONE type connections
+  accountId   String?        // For ACCOUNT type connections
+
+  // Encrypted API token (AES-256-GCM)
+  // NEVER log, print, or include in error messages
+  tokenEncrypted Bytes
+  tokenIv        Bytes       // Initialization vector for AES-GCM
+  tokenAuthTag   Bytes       // Authentication tag for AES-GCM
+
+  // Permissions / metadata
+  email       String?        // Associated Cloudflare email (optional)
+  permissions String[]       // e.g., ["analytics:read", "access:read"]
+  lastUsed    DateTime?
+  isActive    Boolean        @default(true)
+
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  // Relations
+  schedules   ReportSchedule[]
+  reports     GeneratedReport[]
+
+  @@map("cloudflare_connections")
+}
+
+enum ConnectionType {
+  ZONE
+  ACCOUNT
+}
+
+// === Report Schedules ===
+// Defines recurring report generation jobs
+
+model ReportSchedule {
+  id             String            @id @default(cuid())
+  name           String            // "Weekly Security Summary"
+  templateId     String            // References a report template module name
+  frequency      ScheduleFrequency
+  cronExpression String?           // For CUSTOM frequency
+  timeframeDays  Int               @default(7)  // How many days of data to include
+  enabled        Boolean           @default(true)
+
+  // Recipients
+  emailRecipients String[]         // Email addresses for report delivery
+  webhookUrl      String?          // Optional webhook for report notification
+
+  // Template configuration (JSON)
+  // Stores template-specific options like which sections to include
+  config          Json              @default("{}")
+
+  // Scheduling state
+  lastRun         DateTime?
+  nextRun         DateTime?
+
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  // Relations
+  connectionId    String
+  connection      CloudflareConnection @relation(fields: [connectionId], references: [id], onDelete: Cascade)
+  reports         GeneratedReport[]
+
+  @@map("report_schedules")
+}
+
+enum ScheduleFrequency {
+  DAILY
+  WEEKLY
+  BIWEEKLY
+  MONTHLY
+  CUSTOM
+}
+
+// === Generated Reports ===
+// Stores metadata for each generated report (HTML content stored on disk or object storage)
+
+model GeneratedReport {
+  id            String       @id @default(cuid())
+  status        ReportStatus @default(PENDING)
+  templateId    String       // Report template that generated this
+  timeframeStart DateTime    // Data window start
+  timeframeEnd   DateTime    // Data window end
+
+  // Output
+  filePath      String?      // Path to generated HTML file
+  fileSize      Int?         // File size in bytes
+
+  // Execution tracking
+  startedAt     DateTime?
+  completedAt   DateTime?
+  error         String?      // Error message if failed
+  retryCount    Int          @default(0)
+
+  // Metadata
+  metadata      Json         @default("{}")  // Report-specific metadata (zone name, stats summary, etc.)
+
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  // Relations
+  connectionId  String
+  connection    CloudflareConnection @relation(fields: [connectionId], references: [id], onDelete: Cascade)
+  scheduleId    String?
+  schedule      ReportSchedule?      @relation(fields: [scheduleId], references: [id], onDelete: SetNull)
+
+  @@index([status])
+  @@index([connectionId])
+  @@index([scheduleId])
+  @@map("generated_reports")
+}
+
+enum ReportStatus {
+  PENDING
+  RUNNING
+  COMPLETED
+  FAILED
+}

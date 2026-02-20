@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+
+# Build output
+dist/
+
+# Environment (local secrets — NOT .env.example)
+.env
+.env.local
+.env.*.local
+
+# Claude Code state files (per-session, not committed)
+.claude/ACTIVE_ADR
+.claude/SKIP_STOP_GATE
+
+# Generated reports (local dev)
+generated-reports/
+
+# Testing
+coverage/
+.vitest/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts

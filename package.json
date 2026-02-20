@@ -1,0 +1,52 @@
+{
+  "name": "cf-reporting",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source Cloudflare reporting platform with beautiful dashboards and scheduled reports",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && npm run build:worker",
+    "build:worker": "tsup src/workers/index.ts --out-dir dist/workers --format cjs --target node22",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "worker": "tsx src/workers/index.ts",
+    "worker:prod": "node dist/workers/index.js"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@prisma/client": "^6.0.0",
+    "bullmq": "^5.0.0",
+    "ioredis": "^5.0.0",
+    "chart.js": "^4.4.0",
+    "chartjs-node-canvas": "^4.1.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "prisma": "^6.0.0",
+    "vitest": "^2.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "tsx": "^4.19.0",
+    "tsup": "^8.0.0",
+    "@tailwindcss/typography": "^0.5.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
